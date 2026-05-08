@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ✨</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Poppins',sans-serif;
+            min-height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            overflow:hidden;
+
+            background:
+            linear-gradient(
+                135deg,
+                #dbeafe,
+                #ede9fe,
+                #ffe4e6
+            );
+        }
+
+        .hero{
+            width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        .card{
+
+            width:90%;
+            max-width:650px;
+
+            background:rgba(255,255,255,0.35);
+
+            backdrop-filter:blur(14px);
+
+            border-radius:30px;
+
+            padding:50px 35px;
+
+            text-align:center;
+
+            border:1px solid rgba(255,255,255,0.4);
+
+            box-shadow:
+            0 10px 30px rgba(0,0,0,0.08);
+
+            animation:floatCard 3s ease-in-out infinite;
+        }
+
+        h1{
+            font-family:'Pacifico',cursive;
+            font-size:4rem;
+
+            color:#4b5563;
+
+            margin-bottom:20px;
+        }
+
+        .subtitle{
+            font-size:1.15rem;
+
+            line-height:1.9;
+
+            color:#374151;
+        }
+
+        .line{
+            width:90px;
+            height:5px;
+
+            background:
+            linear-gradient(
+                to right,
+                #93c5fd,
+                #c4b5fd,
+                #f9a8d4
+            );
+
+            margin:30px auto;
+
+            border-radius:999px;
+        }
+
+        .message{
+
+            color:#4b5563;
+
+            line-height:2;
+
+            font-size:1rem;
+        }
+
+        .from{
+
+            margin-top:35px;
+
+            color:#6b7280;
+
+            font-weight:600;
+        }
+
+        .stars{
+            position:fixed;
+
+            width:100%;
+            height:100%;
+
+            background-image:
+            radial-gradient(
+                rgba(255,255,255,0.8) 1px,
+                transparent 1px
+            );
+
+            background-size:40px 40px;
+
+            opacity:0.5;
+
+            animation:floatBg 20s linear infinite;
+
+            z-index:-1;
+        }
+
+        @keyframes floatBg{
+
+            from{
+                transform:translateY(0);
+            }
+
+            to{
+                transform:translateY(-120px);
+            }
+        }
+
+        @keyframes floatCard{
+
+            0%{
+                transform:translateY(0px);
+            }
+
+            50%{
+                transform:translateY(-8px);
+            }
+
+            100%{
+                transform:translateY(0px);
+            }
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:2.7rem;
+            }
+
+            .card{
+                padding:40px 25px;
+            }
+
+            .subtitle,
+            .message{
+                font-size:0.95rem;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <section class="hero">
+
+        <div class="card">
+
+            <h1>
+                Happy Birthday Krishna(Kichu) ✨
+            </h1>
+
+            <p class="subtitle">
+                Wishing you a day filled with happiness,
+                smiles, good memories, and beautiful moments 🌸
+            </p>
+
+            <div class="line"></div>
+
+            <p class="message">
+                May this year bring you peace,
+                success, laughter, and lots of positivity ✨
+            </p>
+
+            <p class="from">
+                — Have an amazing birthday 🎂
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
