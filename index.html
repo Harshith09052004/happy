@@ -1,227 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
 
-    <title>Happy Birthday ✨</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background:linear-gradient(135deg,#ffd6e7,#ffeef5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+.card{
+    width:90%;
+    max-width:430px;
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    animation:pop 1s ease;
+    z-index:2;
+}
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap"
-        rel="stylesheet">
+@keyframes pop{
+from{transform:scale(.6);opacity:0;}
+to{transform:scale(1);opacity:1;}
+}
 
-    <style>
+h1{
+    color:#ff4f8b;
+    margin-bottom:20px;
+}
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+p{
+    color:#555;
+    line-height:1.8;
+    font-size:17px;
+}
 
-        body{
-            font-family:'Poppins',sans-serif;
-            min-height:100vh;
+button{
+    margin-top:25px;
+    padding:14px 30px;
+    border:none;
+    border-radius:50px;
+    background:#ff4f8b;
+    color:white;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
 
-            display:flex;
-            justify-content:center;
-            align-items:center;
+button:hover{
+transform:scale(1.08);
+}
 
-            overflow:hidden;
+#message{
+display:none;
+margin-top:20px;
+font-size:18px;
+color:#ff4f8b;
+font-weight:bold;
+animation:fade 1s;
+}
 
-            background:
-            linear-gradient(
-                135deg,
-                #dbeafe,
-                #ede9fe,
-                #ffe4e6
-            );
-        }
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
 
-        .hero{
-            width:100%;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:20px;
-        }
+.heart{
+position:absolute;
+font-size:22px;
+animation:float 7s linear infinite;
+opacity:.7;
+}
 
-        .card{
-
-            width:90%;
-            max-width:650px;
-
-            background:rgba(255,255,255,0.35);
-
-            backdrop-filter:blur(14px);
-
-            border-radius:30px;
-
-            padding:50px 35px;
-
-            text-align:center;
-
-            border:1px solid rgba(255,255,255,0.4);
-
-            box-shadow:
-            0 10px 30px rgba(0,0,0,0.08);
-
-            animation:floatCard 3s ease-in-out infinite;
-        }
-
-        h1{
-            font-family:'Pacifico',cursive;
-            font-size:4rem;
-
-            color:#4b5563;
-
-            margin-bottom:20px;
-        }
-
-        .subtitle{
-            font-size:1.15rem;
-
-            line-height:1.9;
-
-            color:#374151;
-        }
-
-        .line{
-            width:90px;
-            height:5px;
-
-            background:
-            linear-gradient(
-                to right,
-                #93c5fd,
-                #c4b5fd,
-                #f9a8d4
-            );
-
-            margin:30px auto;
-
-            border-radius:999px;
-        }
-
-        .message{
-
-            color:#4b5563;
-
-            line-height:2;
-
-            font-size:1rem;
-        }
-
-        .from{
-
-            margin-top:35px;
-
-            color:#6b7280;
-
-            font-weight:600;
-        }
-
-        .stars{
-            position:fixed;
-
-            width:100%;
-            height:100%;
-
-            background-image:
-            radial-gradient(
-                rgba(255,255,255,0.8) 1px,
-                transparent 1px
-            );
-
-            background-size:40px 40px;
-
-            opacity:0.5;
-
-            animation:floatBg 20s linear infinite;
-
-            z-index:-1;
-        }
-
-        @keyframes floatBg{
-
-            from{
-                transform:translateY(0);
-            }
-
-            to{
-                transform:translateY(-120px);
-            }
-        }
-
-        @keyframes floatCard{
-
-            0%{
-                transform:translateY(0px);
-            }
-
-            50%{
-                transform:translateY(-8px);
-            }
-
-            100%{
-                transform:translateY(0px);
-            }
-        }
-
-        @media(max-width:768px){
-
-            h1{
-                font-size:2.7rem;
-            }
-
-            .card{
-                padding:40px 25px;
-            }
-
-            .subtitle,
-            .message{
-                font-size:0.95rem;
-            }
-        }
-
-    </style>
+@keyframes float{
+0%{
+transform:translateY(100vh) scale(.5);
+}
+100%{
+transform:translateY(-120px) scale(1.5);
+}
+}
+</style>
 
 </head>
-
 <body>
 
-    <div class="stars"></div>
+<div class="card">
+<h1>💖 Hey...</h1>
 
-    <section class="hero">
+<p>
+Nuvvu cheppina prati mata nenu ardham chesukunnanu.
+Ninnu blame cheyyadam naa intention kaadu.
+Busy schedule untundani telusu...
+Kani "Marchipo" ane okka mata matram chala hurt chesindi.
+</p>
 
-        <div class="card">
+<button onclick="showLove()">Click Here 🌸</button>
 
-            <h1>
-                Happy Birthday Krishna✨
-            </h1>
+<div id="message">
+Ninnu convince cheyyali ani kaadu...
+Ninnu ardham chesukovali anukuntunna.
 
-            <p class="subtitle">
-                Wishing you a day filled with happiness,
-                smiles, good memories, and beautiful moments 🌸
-            </p>
+❤️
 
-            <div class="line"></div>
+Time dorikinappudu matladukundam.
+Nuvvu smile chesthe chaalu. 😊
+</div>
 
-            <p class="message">
-                May this year bring you peace,
-                success, laughter, and lots of positivity ✨
-            </p>
+</div>
 
-            <p class="from">
-                — Have an amazing birthday 🎂
-            </p>
+<script>
 
-        </div>
+function showLove(){
+document.getElementById("message").style.display="block";
+}
 
-    </section>
+function createHeart(){
+const heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML=["💖","💕","💗","🌸","❤️"][Math.floor(Math.random()*5)];
+
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=4+Math.random()*5+"s";
+heart.style.fontSize=(20+Math.random()*20)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},9000);
+}
+
+setInterval(createHeart,300);
+
+</script>
 
 </body>
-
 </html>
